@@ -43,3 +43,26 @@ transition: opacity 200ms ease-in-out;
 .itemOpacidad:hover{
     opacity: 1;
 }
+
+.subrayado{
+    position: relative;
+    display: inline-block;
+}
+.subrayado:hover{
+    cursor: pointer;
+}
+
+.subrayado::after{
+ content: ""; 
+ position: absolute;
+ left: 0;
+ bottom: -15px;
+ width: 0%;
+ background-color: chartreuse;
+ height: 2px;
+ transition: width 250ms ease-in;
+}
+
+.subrayado:hover::after{
+    width: 100%;
+}
