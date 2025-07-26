@@ -22,3 +22,12 @@ flex-grow: 1;
 {
 background-color: lightskyblue;
 }
+
+.parrafoAmplio{
+transition: font-size 300ms ease-out;
+}
+
+.parrafoAmplio:hover{
+    font-size: large;
+    cursor: pointer;
+}
