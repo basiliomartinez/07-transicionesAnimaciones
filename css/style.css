@@ -73,4 +73,18 @@ transition: opacity 200ms ease-in-out;
     height: 50px;
     background-color: lightgrey;
     color: black;
+    animation-name: movimiento;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes movimiento {
+    form{
+        /*aqui nombro los valores de css que quiero que tenga la animacion en el inicio*/
+        transform: translateX(0);
+    }
+    to{
+transform: translateX(200px);
+    }
 }
